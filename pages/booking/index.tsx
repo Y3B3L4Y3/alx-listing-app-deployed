@@ -51,7 +51,7 @@ export default function BookingForm() {
     }
 
     try {
-      const response = await axios.post("/api/bookings", formData);
+      await axios.post("/api/bookings", formData);
       setSuccess("Booking confirmed! Thank you for your reservation.");
       setFormData({
         firstName: "",

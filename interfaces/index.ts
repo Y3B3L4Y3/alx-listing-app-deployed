@@ -27,3 +27,11 @@ export interface CardProps {
   image: string;
   discount?: string;
 }
+
+export interface BookingDetails {
+  propertyName: string;
+  startDate: string;
+  totalNights: number;
+  bookingFee: number;
+  price: number;
+}
